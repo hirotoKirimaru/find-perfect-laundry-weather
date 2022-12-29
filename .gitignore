@@ -1,0 +1,9 @@
+/node_modules/
+/allure-results/
+/allure-report/
+*debug*.png
+test-results/*
+# 作りこみが終わるまで
+# *.png
+
+.idea

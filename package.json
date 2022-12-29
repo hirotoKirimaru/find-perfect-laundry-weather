@@ -1,0 +1,26 @@
+{
+  "name": "find-perfect-laundry-weather",
+  "version": "1.0.0",
+  "description": "洗濯指数が高い日を探す。",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hirotoKirimaru/find-perfect-laundry-weather.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hirotoKirimaru/find-perfect-laundry-weather/issues"
+  },
+  "homepage": "https://github.com/hirotoKirimaru/find-perfect-laundry-weather#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.29.1",
+    "@types/config": "^3.3.0",
+    "config": "^3.3.8",
+    "js-yaml": "^4.1.0",
+    "playwright": "^1.29.1"
+  }
+}
