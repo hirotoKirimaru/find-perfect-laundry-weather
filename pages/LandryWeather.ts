@@ -26,13 +26,17 @@ export class LandryWeatherPage {
         const tableDom = await this.page.$$("//*[@class='forecast-point-week']//tr[2]/td")
 
         await tableDom.forEach(async e => {
+            const b = await e.waitForSelector("p")
+            console.log(await b.innerText())
+            // console.log(await e.waitForSelector("p").innerText())
+            // console.log(await e.waitForSelector("p").innerText())
             // console.log(e.asElement)
             // console.log(e);
 
             // const a = await e.innerText
-            const a = await (await e.waitForSelector("//img/../p")).innerText
+            // const a = await (await e.waitForSelector("//img/../p")).innerText
             // await this.page.pause()
-            console.log(a);
+            // console.log(a);
         })
     }
 }
