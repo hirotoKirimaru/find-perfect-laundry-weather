@@ -4,7 +4,8 @@
   "description": "洗濯指数が高い日を探す。",
   "main": "index.js",
   "scripts": {
-    "test": "npx playwright test"
+    "test": "npx playwright test",
+    "debug": "set PWDEBUG=1 | npx playwright test --debug"
   },
   "repository": {
     "type": "git",

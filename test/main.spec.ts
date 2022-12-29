@@ -7,10 +7,10 @@ test('洗濯指数をスクレイピングする', async ({ page }) => {
   const screenshot = new ScreenShot({ page: page, contextPath: `` });
 
   try {
-    screenshot.execute();
     const landryWeatherPage = new LandryWeatherPage(page);
     await landryWeatherPage.goto();
-    screenshot.execute();
+    await landryWeatherPage.search();
+    await page.pause();
 
   } catch (error) {
     screenshot.error();
